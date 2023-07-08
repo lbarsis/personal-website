@@ -1,0 +1,30 @@
+/* Hide elements outside the #resume div */
+body * {
+  visibility:hidden;
+  background: transparent;
+}
+
+body {
+  
+  background-color: transparent;
+}
+
+/* Show elements inside the #resume div and style them */
+body #resume, #resume * {
+  visibility:visible;
+  margin-top: 0;
+  border: none;
+  /* Other styles you need for printing */
+}
+
+/* Hide elements you don't want to print */
+body #resume .print, .print * {
+  display: none;
+}
+
+/* Set resume to be shown in whole page */
+body #resume {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

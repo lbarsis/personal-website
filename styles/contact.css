@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.navbar {
+  z-index: 1;
+}
+
+.contact-container {
+  position: relative;
+  color: rgb(73, 73, 73);
+  background: linear-gradient(35deg, rgba(97,97,97,1) 0%, rgba(217, 217, 217,1) 50%, rgba(97,97,97,1) 100%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px gray;
+  z-index: 1;
+}
+
+.btn {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+h1 {
+  text-shadow: 2px 2px black;
+}
+
+p, h3 {
+  font-size: 30px;
+  color: #808080;
+  text-shadow: 2px 2px black;
+}

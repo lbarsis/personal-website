@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.resume {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  padding: 25px;
+  margin: 25px auto;
+  max-width: 850px;
+  border: 1px solid #9c9c9c;
+  display: grid;
+  grid-template-columns: .45fr 1fr;
+  grid-template-rows: .25fr .25fr .25fr .25fr .25fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "summary summary"
+    "education projects"
+    "skills projects"
+    "certificates projects"
+    "experience experience";
+}
+
+.summary {
+  grid-area: summary;
+  height: fit-content;
+  /* border: 1px solid black; */
+}
+
+.experience {
+  grid-area: experience;
+  height: fit-content;
+  /* border: 1px solid black; */
+}
+
+.summary .title-block {
+  display: block;
+  margin: 5px auto;
+  max-width: 75%;
+  border: 3px solid #7282a1;
+  background-color: #eae8e8;
+}
+
+.summary .title-block p {
+  text-align: center;
+}
+
+.summary .contact-info {
+  margin: 0px auto;
+  padding: 0;
+  max-width: 75%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.summary .description {
+  margin: auto;
+  padding: 0;
+  max-width: 75%;
+  font-size: 13px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.summary .description a {
+  color: black;
+}
+
+.name {
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  letter-spacing: .2rem;
+}
+
+.title {
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: .2rem;
+}
+
+.projects {
+  grid-area: projects;
+  /* border: 1px solid black; */
+}
+
+.section-title {
+  position: relative;
+  max-width: 45%;
+  padding: 10px 0px;
+  letter-spacing: .2rem;
+  color: white;
+  text-align: center;
+  background-color: #303848;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -122%;
+  width: 122%;
+  height: 2px;
+  /* Adjust this to change the height of the line */
+  background-color: #7282a1;
+  /* Change this to match the color you want the line to be */
+  transform: translateY(-50%);
+}
+
+.project-title {
+  display: block;
+  margin: 0px 25px;
+  font-weight: bold;
+
+}
+
+.project-title a {
+  text-decoration: none;
+  color: #f7b615;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.project-details {
+  margin: 0 35px;
+  font-size: 13px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.education {
+  grid-area: education;
+  background-color: #f2f2f2;
+  /* border: 1px solid black; */
+}
+
+.skills {
+  grid-area: skills;
+  background-color: #f2f2f2;
+  /* border: 1px solid black; */
+}
+
+.certificates {
+  grid-area: certificates;
+  background-color: #f2f2f2;
+  margin-bottom: 25px;
+  /* border: 1px solid black; */
+}
+
+.list-section {
+  margin: 10px;
+  letter-spacing: .3rem;
+  font-size: 15px;
+}
+
+.list-item {
+  margin: 15px 15px;
+  font-size: 13px;
+}
+
+.list-item p {
+  margin: 0 5px;
+  font-size: 13px;
+}
+
+.list-item-title {
+  font-weight: bold;
+}
+
+.print {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: right;
+}
+
+/* Mobile responsiveness starts here */
+@media screen and (max-width: 768px) {
+  .resume {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "summary"
+      "projects"
+      "experience"
+      "education"
+      "skills"
+      "certificates";
+  }
+}
+
+/* Mobile responsiveness starts here */
+@media screen and (max-width: 768px) {
+  .summary .contact-info {
+    grid-template-columns: 1fr;
+  }
+}
