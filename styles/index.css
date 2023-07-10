@@ -1,33 +1,25 @@
 * {
   box-sizing: border-box;
-  
+
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  
+  color: black;
+  /* font-size: 13px; */
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  letter-spacing: .3rem;
 }
-/* 
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-} */
 
 h1 {
-  text-shadow: 2px 2px black;
-}
-
-p {
-  font-size: 30px;
-  color: #616161;
-  /* color: #0f0478; */
-  text-shadow: 1px 1px black;
+  max-width: 750px;
+  padding: 25px;
+  margin: 50px auto 0px auto;
+  border: 3px solid #7282a1;
+  background-color: white;
 }
 
 .navbar {
@@ -35,20 +27,89 @@ p {
 }
 
 .cover-container {
+  padding: 0 25px;
+  max-width: 1200px;
+  margin: 15px auto;
   position: relative;
-  color: rgb(73, 73, 73);
-  border: 1px solid rgba(75, 75, 75, .5);
-  background: linear-gradient(35deg, rgba(97,97,97,1) 0%, rgba(217, 217, 217,1) 50%, rgba(97,97,97,1) 100%);
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px gray;
-  z-index: 1;
+  background-color: white;
+  border: 1px solid #9c9c9c;
+  padding-bottom: 25px;
+}
+
+.cover-container h1 {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  border: none;
+  color: white;
+  background-color: #303848;
+  letter-spacing: .3rem;
+}
+
+.cover-container p {
+  margin: 0 75px;
+  letter-spacing: .2rem;
+  color: black;
+  font-size: 14px;
 }
 
 .btn {
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
+  text-decoration: none;
+  color: white;
+  background-color: #303848;
+  border-radius: 0;
+  margin-top: 25px;
+  transition: height 0.3s ease-out;
 }
 
-.avatar {
-  border-bottom: 1px solid black;
+.skills-container {
+  display: block;
+  margin: 15px auto;
+  background-color: white;
+  max-width: 1750px;
+  border: 1px solid #9c9c9c;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "specialization technologies hobbies";
+}
+
+.skills-container p {
+  font-size: 14px;
+  letter-spacing: .1rem;
+  
+}
+
+.specialization {
+  grid-area: specialization; 
+  /* padding: 0 75px; */
+}
+
+.technologies {
+  grid-area: technologies;
+}
+
+.hobbies {
+  grid-area: hobbies;
+}
+
+.skills-title {
+  /* text-align: left; */
+  font-size: 13px;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: .3rem;
+  color: white;
+  position: relative;
+  /* add position relative so the pseudo-element is positioned correctly */
+  overflow: hidden;
+  /* add overflow hidden to hide the part of the pseudo-element that goes outside the div */
+}
+
+#contact-info {
+  margin-top: 25px;
+  transition: opacity 0.3s ease-out;
 }
