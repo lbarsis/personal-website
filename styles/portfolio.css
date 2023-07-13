@@ -7,7 +7,7 @@ body {
   background-color: #f4f4f4;
 }
 
-.container {  
+.container {
   margin: 25px auto;
   max-width: 1750px;
   height: fit-content;
@@ -23,18 +23,27 @@ body {
   /* border: 1px solid black; */
 }
 
-.project-1 { grid-area: project-1; }
+.project-1 {
+  grid-area: project-1;
+}
 
-.project-2 { grid-area: project-2; }
+.project-2 {
+  grid-area: project-2;
+}
 
-.project-3 { grid-area: project-3; }
+.project-3 {
+  grid-area: project-3;
+}
 
-.project-4 { grid-area: project-4; }
+.project-4 {
+  grid-area: project-4;
+}
 
 
 /* Style the counter cards */
 .card {
   width: 100%;
+  max-width: 800px;
   height: fit-content;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -45,9 +54,10 @@ body {
 .flip-card {
   background-color: transparent;
   margin: auto;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 480px;
-  perspective: 1000px; 
+  perspective: 1000px;
 }
 
 /* This container is needed to position the front and back side */
@@ -66,7 +76,8 @@ body {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -109,4 +120,27 @@ body {
   color: white;
   background-color: #303848;
   margin-bottom: 25px;
+}
+
+/* Mobile responsiveness starts here */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "project-1"
+      "project-2"
+      "project-3"
+      "project-4";
+    /* border: 1px solid black; */
+  }
+
+  .card {
+    width: 15%;
+  }
+
+  .flip-card {
+    height: auto;
+  }
+
 }

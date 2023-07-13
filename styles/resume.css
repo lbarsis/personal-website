@@ -3,7 +3,13 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+}
+
+.navbar {
+  text-align: center;
+  letter-spacing: .3rem;
 }
 
 .resume {
@@ -180,6 +186,7 @@ body {
   border: none;
   text-align: right;
 }
+
 
 /* Mobile responsiveness starts here */
 @media screen and (max-width: 768px) {

@@ -113,3 +113,30 @@ h1 {
   margin-top: 25px;
   transition: opacity 0.3s ease-out;
 }
+
+/* Mobile responsiveness starts here */
+@media screen and (max-width: 768px) {
+  .cover-container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .cover-container p {
+    margin: 10px;
+  }
+
+  h1 {
+    margin: 10px;
+  }
+
+  .skills-container {
+    margin: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    grid-template-areas:
+      "specialization"
+       "technologies"
+       "hobbies";
+  }
+}
