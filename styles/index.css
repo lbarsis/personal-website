@@ -11,8 +11,25 @@ body {
   /* font-size: 13px; */
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
-  letter-spacing: .3rem;
+  /* offset-anchor: top; */
+  /* letter-spacing: .3rem; */
 }
+
+#home {
+  scroll-margin-top: 75px;
+}
+/* 
+#skills {
+  scroll-margin-top: 75px;
+}
+
+#portfolio {
+  scroll-margin-top: 75px;
+}
+
+#resume-title {
+  scroll-margin-top: 75px;
+} */
 
 h1 {
   max-width: 750px;
@@ -20,10 +37,14 @@ h1 {
   margin: 50px auto 0px auto;
   border: 3px solid #7282a1;
   background-color: white;
+  scroll-margin-top: 75px;
 }
 
 .navbar {
+  position: sticky;
   background-color: white;
+  top: 0;
+  z-index: 1;
 }
 
 .cover-container {

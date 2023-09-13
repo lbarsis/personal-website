@@ -9,6 +9,9 @@
   <link href="styles/index.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/butler-stencil" rel="stylesheet">
   <link href="styles/portfolio.css" rel="stylesheet">
+  
+  <link href="styles/resume.css" rel="stylesheet">
+  <link href="styles/resume-print.css" rel="stylesheet" media="print">
   <title>Levi's Domain</title>
 </head>
 
@@ -24,17 +27,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link border-end" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link border-end" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link border-end" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border-end" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume-title">Resume</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Navbar end -->
-  <div class="cover-container">
+  <div id="home" class="cover-container">
     <main>
       <!-- <img src="assets/ReadyPlayerMe-Avatar.png" class="img-fluid" alt="avatar"> -->
       <div class="avatar">
@@ -70,7 +79,7 @@
     </main>
   </div>
 
-  <h1>Skills</h1>
+  <h1 id="skills">Skills</h1>
 
   <div class="skills-container">
     <div class="specialization">
@@ -78,11 +87,11 @@
         SPECIALIZATIONS
       </h4>
       <p>Web Development</p>
+      <p>Object Oriented Programming</p>
       <p>Frontend</p>
       <p>Backend</p>
       <p>Version Control</p>
       <p>API Development</p>
-      <p>Deployment</p>
     </div>
     <div class="technologies">
       <h4 class="skills-title" style="background-color: #8f8c8d;">
@@ -93,6 +102,7 @@
       <p>SQLite/PostgreSQL</p>
       <p>Git</p>
       <p>HTML</p>
+      <p>Bootstrap</p>
       <p>CSS</p>
       <p>Stripe API</p>
       <p>Active Storage Gem</p>
@@ -110,7 +120,7 @@
     </div>
   </div>
 
-  <h1>Portfolio</h1>
+  <h1 id="portfolio">Portfolio</h1>
 
   <div class="container">
     <div class="project-1">
@@ -130,9 +140,9 @@
               Github
             </a>
             <br>
-            <a href="https://steppers.onrender.com/" style="color: black; font-family: Arial, Helvetica, sans-serif;">
+            <!-- <a href="https://steppers.onrender.com/" style="color: black; font-family: Arial, Helvetica, sans-serif;">
               Demo
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -203,9 +213,210 @@
     </div>
   </div>
 
+  <h1 id="resume-title">Resume</h1>
+  <div class="resume" id="resume">
+    <div class="summary">
+      <button class="print" onclick="printDiv()">Print Resume</button>
+      <div class="title-block">
+        <p class="name">Levi Barsis</p>
+        <p class="title">Software Engineer</p>
+      </div>
+      <div class="contact-info">
+        <p>Glendale, CA 91203</p>
+        <p>907-398-6147</p>
+        <p>lbarsis@gmail.com</p>
+      </div>
+      <div class="description">
+        <p>
+          Highly skilled and motivated Software Engineer with a passion for learning and development. Strong experience
+          in Agile and Scrum environments and a proven ability to work effectively in a collaborative team setting.
+          Possessing exceptional communication and analytical skills, as well as technical proficiency in HTML5,
+          JavaScript, React, Ruby and other programming languages. Experienced in app development, program optimization,
+          and code validation through hands-on school projects. Committed to producing clean, efficient, and effective
+          code.
+        </p>
+        <p>
+          <b><a href="https://github.com/lbarsis">GitHub</a></b>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="projects">
+      <div class="project-1">
+        <p class="section-title">Portfolio</p>
+        <p class="project-title">Steppers: An E-Commerce Store - <a class="project-link"
+            href="https://github.com/lbarsis/shoe-store">GitHub</a></p>
+        <ul class="project-details">
+          <li>
+            Designed and developed a comprehensive E-commerce platform enabling users to seamlessly browse an array of
+            products, add desired items to the cart, securely checkout, place orders, and review past transactions.
+          </li>
+          <li>
+            Incorporated Stripe API to orchestrate payment processing, providing a safe and secure method for checkout
+            sessions while ensuring efficient handling and storage of customer data.
+          </li>
+          <li>
+            Integrated Active Storage, facilitating admins to conveniently upload product images directly from their
+            local systems, thus simplifying the process of catalog management.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-2">
+        <p class="project-title">Theme Park Planner - <a class="project-link"
+            href="https://github.com/lbarsis/theme-park-planner">GitHub</a></p>
+        <ul class="project-details">
+          <li>
+            Conceptualized and created an intuitive application designed to streamline vacation and theme park visit
+            planning.
+          </li>
+          <li>
+            Seamlessly integrated a Postgresql backend with a Rails API, complemented by a React frontend, to ensure
+            robust and responsive application performance.
+          </li>
+          <li>
+            Embedded advanced user authentication and admin authorization features to provide a secure and user-centric
+            experience.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job-3">
+        <p class="project-title">Bug Tracker - <a class="project-link"
+            href="https://github.com/lbarsis/bug-tracker">GitHub</a>
+        </p>
+        <ul class="project-details">
+          <li>
+            Harnesses a Rails API coupled with an SQLite backend to create a robust solution for small teams to
+            efficiently track and manage issues.
+          </li>
+          <li>
+            Enables users to create individual projects, generate associated tickets, and assign team members, fostering
+            collaborative problem-solving and efficient project management.
+          </li>
+          <li>
+            Provides inline table editing functionality, fostering an intuitive and simplified approach to user project
+            tracking.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="education">
+      <p class="list-section">EDUCATION — </p>
+
+      <div class="list-item">
+        <h9 class="list-item-title">Flatiron School</h9>
+        <p>Certificate of Completion</p>
+        <p>Aug 2022 - July 2023</p>
+        <p>Software Engineering</p>
+      </div>
+
+      <div class="list-item">
+        <h9 class="list-item-title">University of Alaska, Fairbanks</h9>
+        <p>Bachelor of Science</p>
+        <p>Aug 2012 - May 2017</p>
+        <p>Mechanical Engineering</p>
+      </div>
+    </div>
+
+    <div class="skills">
+      <p class="list-section">SKILLS — </p>
+      <div class="list-item">
+        <p>Ruby/Ruby on Rails</p>
+        <p>React</p>
+        <p>Git</p>
+        <p>Active Record</p>
+        <p>User Authentication</p>
+        <p>Deployment</p>
+        <p>Project Estimation</p>
+        <p>Project Management</p>
+        <p>2D and 3D Modeling</p>
+      </div>
+    </div>
+
+    <div class="certificates">
+      <p class="list-section">CERTIFICATIONS — </p>
+      <div class="list-item">
+        <h9 class="list-item-title">Flatiron - Certificate of Completion</h9>
+        <p>Certificate of Completion</p>
+        <p>Aug 2022 - July 2023</p>
+        <p>Software Engineering</p>
+      </div>
+
+      <div class="list-item">
+        <h9 class="list-item-title">Fundamentals of Engineering, Mechanical</h9>
+        <p>Date: Jan 2017</p>
+        <p>Board: Alaska</p>
+        <p>NCEES ID: 17-475-42</p>
+      </div>
+    </div>
+
+    <div class="experience">
+      <p class="section-title">EXPERIENCE</p>
+      <div class="list-item">
+        <p>Nov 2020 - Current</p>
+        <p class="project-title">Project Engineer - Krieger Specialty Products</p>
+        <ul class="project-details">
+          <li>
+            Oversaw and maintained the integrity of system performance and backend databases to ensure optimum functionality.
+          </li>
+          <li>
+            Engineered and executed incremental enhancements to the Quality Management System (QMS) software using robust scripts. Notable improvements include: automation of email notifications upon field entries, development of comprehensive report templates, and introduction of visual indicators to alert project management about potential issues.
+          </li>
+          <li>
+            Served as a crucial liaison between the Engineering and Production departments, effectively bridging the communication gap and ensuring seamless operation processes.
+          </li>
+          <li>
+            Managed and resolved quality-related concerns, meticulously documenting and tracking rework entries into the system. Crafted detailed reports and accounts to monitor quality control and enhance future process improvements.
+          </li>
+        </ul>        
+      </div>
+
+      <div class="list-item">
+        <p>Feb 2018 - Nov 2020</p>
+        <p class="project-title">Field Engineer • Delta Constructors</p>
+        <ul class="project-details">
+          <li>
+            Interacted effectively with site engineering team and field staff to coordinate work that complied with design and construction documents.
+          </li>
+          <li>
+            Confirmed that construction progressed as scheduled and in compliance with contract specifications.
+          </li>
+          <li>
+            Managed budget, scheduling, quality assurance, safety compliance and coordination of construction trades and contractors.
+          </li>
+        </ul>        
+      </div>
+
+      <div class="list-item">
+        <p>Jul 2017 - Feb 2018</p>
+        <p class="project-title">Field Service Technician - GCI Communication</p>
+        <ul class="project-details">
+          <li>
+            Analyzed user-generated trouble tickets to determine causes of problems and took appropriate action for resolution.
+          </li>
+          <li>
+            Worked closely with network administrators and server engineers to deliver quality service.
+          </li>
+        </ul>        
+      </div>
+    </div>
+
   <style>
     @import url('https://fonts.cdnfonts.com/css/butler-stencil');
   </style>
+
+  <script>
+    
+
+    function printDiv() {
+        window.print()
+
+      }
+  </script>
 
   <script>
     document.getElementById("extend-btn").addEventListener("click", function () {
