@@ -178,10 +178,14 @@
 }
 
 .print {
+  display: block;
   width: 100%;
   background-color: transparent;
   border: none;
   text-align: right;
+  text-decoration: none;
+  color: black;
+  right: 0;
 }
 
 

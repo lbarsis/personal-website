@@ -1,12 +1,12 @@
 /* Hide elements outside the #resume div */
 body * {
-  visibility:hidden;
+  visibility: hidden;
   background: transparent;
 }
 
-body {
+/* body {
   background-color: transparent;
-}
+} */
 
 /* Show elements inside the #resume div and style them */
 body #resume, #resume * {
@@ -19,6 +19,7 @@ body #resume, #resume * {
 /* Hide elements you don't want to print */
 body #resume .print, .print * {
   display: none;
+  background: transparent;
 }
 
 /* Set resume to be shown in whole page */

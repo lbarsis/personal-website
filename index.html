@@ -9,7 +9,7 @@
   <link href="styles/index.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/butler-stencil" rel="stylesheet">
   <link href="styles/portfolio.css" rel="stylesheet">
-  
+
   <link href="styles/resume.css" rel="stylesheet">
   <link href="styles/resume-print.css" rel="stylesheet" media="print">
   <title>Levi Barsis</title>
@@ -216,7 +216,10 @@
   <h1 id="resume-title">Resume</h1>
   <div class="resume" id="resume">
     <div class="summary">
-      <button class="print" onclick="printDiv()">Print Resume</button>
+      <!-- <button class="print" onclick="printDiv()">Print Resume</button> -->
+      <!-- <p>Downlow</p> -->
+      <a class="print" href="./assets/Resume - Levi Barsis.pdf" download>Technical Resume</a>
+      <a class="print" href="./assets/Resume_Levi_Barsis_fun.pdf" download>Styled Resume</a>
       <div class="title-block">
         <p class="name">Levi Barsis</p>
         <p class="title">Software Engineer</p>
@@ -361,18 +364,25 @@
         <p class="project-title">Project Engineer - Krieger Specialty Products</p>
         <ul class="project-details">
           <li>
-            Oversaw and maintained the integrity of system performance and backend databases to ensure optimum functionality.
+            Oversaw and maintained the integrity of system performance and backend databases to ensure optimum
+            functionality.
           </li>
           <li>
-            Engineered and executed incremental enhancements to the Quality Management System (QMS) software using robust scripts. Notable improvements include: automation of email notifications upon field entries, development of comprehensive report templates, and introduction of visual indicators to alert project management about potential issues.
+            Engineered and executed incremental enhancements to the Quality Management System (QMS) software using
+            robust scripts. Notable improvements include: automation of email notifications upon field entries,
+            development of comprehensive report templates, and introduction of visual indicators to alert project
+            management about potential issues.
           </li>
           <li>
-            Served as a crucial liaison between the Engineering and Production departments, effectively bridging the communication gap and ensuring seamless operation processes.
+            Served as a crucial liaison between the Engineering and Production departments, effectively bridging the
+            communication gap and ensuring seamless operation processes.
           </li>
           <li>
-            Managed and resolved quality-related concerns, meticulously documenting and tracking rework entries into the system. Crafted detailed reports and accounts to monitor quality control and enhance future process improvements.
+            Managed and resolved quality-related concerns, meticulously documenting and tracking rework entries into the
+            system. Crafted detailed reports and accounts to monitor quality control and enhance future process
+            improvements.
           </li>
-        </ul>        
+        </ul>
       </div>
 
       <div class="list-item">
@@ -380,15 +390,17 @@
         <p class="project-title">Field Engineer • Delta Constructors</p>
         <ul class="project-details">
           <li>
-            Interacted effectively with site engineering team and field staff to coordinate work that complied with design and construction documents.
+            Interacted effectively with site engineering team and field staff to coordinate work that complied with
+            design and construction documents.
           </li>
           <li>
             Confirmed that construction progressed as scheduled and in compliance with contract specifications.
           </li>
           <li>
-            Managed budget, scheduling, quality assurance, safety compliance and coordination of construction trades and contractors.
+            Managed budget, scheduling, quality assurance, safety compliance and coordination of construction trades and
+            contractors.
           </li>
-        </ul>        
+        </ul>
       </div>
 
       <div class="list-item">
@@ -396,29 +408,23 @@
         <p class="project-title">Field Service Technician - GCI Communication</p>
         <ul class="project-details">
           <li>
-            Analyzed user-generated trouble tickets to determine causes of problems and took appropriate action for resolution.
+            Analyzed user-generated trouble tickets to determine causes of problems and took appropriate action for
+            resolution.
           </li>
           <li>
             Worked closely with network administrators and server engineers to deliver quality service.
           </li>
-        </ul>        
+        </ul>
       </div>
     </div>
+  </div>
 
   <style>
     @import url('https://fonts.cdnfonts.com/css/butler-stencil');
   </style>
 
-  <script>
-    
 
-    function printDiv() {
-        window.print()
-
-      }
-  </script>
-
-  <script>
+<script>
     document.getElementById("extend-btn").addEventListener("click", function () {
       var contactInfo = document.getElementById("contact-info");
 
@@ -428,6 +434,11 @@
         contactInfo.style.display = "none";
       }
     });
+
+    
+    function printDiv() {
+      window.print()
+    }
   </script>
 
 
